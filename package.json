@@ -1,0 +1,26 @@
+{
+  "name": "euler",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daviddm/euler.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daviddm/euler/issues"
+  },
+  "homepage": "https://github.com/daviddm/euler#readme",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "chai": "^3.2.0"
+  }
+}
