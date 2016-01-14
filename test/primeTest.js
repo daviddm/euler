@@ -16,4 +16,23 @@ describe('Prime', () => {
             done();
         });
     });
+
+    describe('Factors', () => {
+        it('Should find 1 to NOT be a prime', (done) => {
+            chai.assert.isFalse(prime.isPrime(1));
+            done();
+        });
+        it('Should find 2 to be a prime', (done) => {
+            chai.assert.isTrue(prime.isPrime(2));
+            done();
+        });
+        it('Should find 3 to be a prime', (done) => {
+            chai.assert.isTrue(prime.isPrime(3));
+            done();
+        });
+        it('Should find 4 to not be a prime', (done) => {
+            chai.assert.isFalse(prime.isPrime(14));
+            done();
+        });
+    });
 });
