@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/daviddm/euler#readme",
   "dependencies": {
-
+    "big-integer": "^1.6.10",
   },
   "devDependencies": {
     "mocha": "^2.3.4",

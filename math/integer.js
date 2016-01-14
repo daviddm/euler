@@ -12,3 +12,17 @@ exports.integerArray = (min, max, step) => {
 exports.largest = arr => {
     return arr.reduce( (prev, curr) => curr > prev ? curr : prev )
 }
+
+exports.devisors = (number, numeric) => {
+    var devisors = [],
+        devisorsNr = 0;
+    if (numeric == null) {
+        numeric = false;
+    }
+    for (var i = 1; i <= number; i++) {
+        if (number % i === 0) {
+            numeric ? devisorsNr++ : devisors.push(i);
+        }
+    }
+    return numeric ? devisorsNr : devisors;
+}

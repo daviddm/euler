@@ -31,4 +31,23 @@ describe('Integer', () => {
             done();
         });
     });
+
+    describe('Devisors', () => {
+        it('Should find singel devisor', (done) => {
+            chai.expect(integer.devisors(1)).to.deep.equal([1]);
+            done();
+        });
+        it('Should find 2 devisors', (done) => {
+            chai.expect(integer.devisors(2)).to.deep.equal([1,2]);
+            done();
+        });
+        it('Should find 4 devisors', (done) => {
+            chai.expect(integer.devisors(10)).to.deep.equal([1,2,5,10]);
+            done();
+        });
+        it('Should find 4 devisors, only numeric', (done) => {
+            chai.expect(integer.devisors(10,true)).equal(4);
+            done();
+        });
+    });
 });
